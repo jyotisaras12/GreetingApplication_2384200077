@@ -46,6 +46,18 @@
         }
       }
     },
+    "/HelloGreeting/greeting": {
+      "get": {
+        "tags": [
+          "HelloGreeting"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/HelloGreeting/{Id}": {
       "put": {
         "tags": [

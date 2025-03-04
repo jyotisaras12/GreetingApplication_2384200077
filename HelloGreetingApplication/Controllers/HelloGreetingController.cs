@@ -1,3 +1,4 @@
+using BusinessLayer.Interface;
 using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
@@ -12,6 +13,7 @@ namespace HelloGreetingApplication.Controllers
     public class HelloGreetingController : ControllerBase
     {
         private readonly ILogger<HelloGreetingController> _logger;
+        private readonly IGreetingBL _greetingBL;
         private static int newId = 1;
         private static Dictionary<int, RequestDTO> _greetings = new Dictionary<int, RequestDTO>
         {
@@ -20,9 +22,10 @@ namespace HelloGreetingApplication.Controllers
             { newId++, new RequestDTO { Key = "Cultural", Value = "Namaste!" } }
         };
 
-        public HelloGreetingController(ILogger<HelloGreetingController> logger)
+        public HelloGreetingController(ILogger<HelloGreetingController> logger, IGreetingBL greetingBL)
         {
             _logger = logger;
+            _greetingBL = greetingBL;
         }
 
         /// <summary>
@@ -37,6 +40,23 @@ namespace HelloGreetingApplication.Controllers
             responseModel.Success = true;
             responseModel.Message = "Get() method executed successfully!";
             responseModel.Data = _greetings;
+            return Ok(responseModel);
+        }
+
+        /// <summary>
+        /// Get method to fetch the greeting message from Business Layer
+        /// </summary>
+        /// <returns>response model</returns>
+        [HttpGet]
+        [Route("greeting")]
+        public IActionResult GetGreetingMessage()
+        {
+            _logger.LogInformation("GET request received to fetch greeting message from Business Layer.");
+            string greetingMessage = _greetingBL.GreetingMessage();
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+            responseModel.Success = true;
+            responseModel.Message = "Greeting message retrieved successfully!";
+            responseModel.Data = greetingMessage;
             return Ok(responseModel);
         }
 

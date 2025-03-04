@@ -1,3 +1,5 @@
+using BusinessLayer.Service;
+using BusinessLayer.Interface;
 using NLog;
 using NLog.Web;
 
@@ -15,6 +17,7 @@ try
     // Add services to the container.
 
     builder.Services.AddControllers();
+    builder.Services.AddScoped<IGreetingBL, GreetingBL>();
 
     // Add Swagger to container
     builder.Services.AddEndpointsApiExplorer();

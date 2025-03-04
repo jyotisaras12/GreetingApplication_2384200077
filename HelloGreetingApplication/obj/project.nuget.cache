@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ayPHwcfvNFI=",
+  "dgSpecHash": "cfcsUAGkqh0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\BridgeLabz_Visual_Studio\\GreetingApp\\HelloGreetingApplication\\HelloGreetingApplication\\HelloGreetingApplication.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\GreetingApplication_GIT\\GreetingApplication_2384200077\\HelloGreetingApplication\\HelloGreetingApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

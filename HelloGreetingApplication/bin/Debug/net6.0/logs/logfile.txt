@@ -479,3 +479,283 @@
 2025-03-04 15:08:32.9699 | Debug | Connection id "0HNAQVV55V505" is closed. The last processed stream ID was 0. 
 2025-03-04 15:08:32.9699 | Debug | Connection id "0HNAQVV55V505" sending FIN because: "The Socket transport's send loop completed gracefully." 
 2025-03-04 15:08:32.9842 | Debug | Connection id "0HNAQVV55V505" stopped. 
+2025-03-04 21:05:47.8282 | Info | HelloGreetingApplication is starting. 
+2025-03-04 21:05:48.2473 | Debug | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-04 21:05:48.3770 | Debug | Hosting starting 
+2025-03-04 21:05:48.6099 | Debug | Using development certificate: CN=localhost (Thumbprint: 74D550BFEDF980A632FEAD55DADED9107E4DE1C7) 
+2025-03-04 21:05:48.7099 | Info | Now listening on: https://localhost:7021 
+2025-03-04 21:05:48.7121 | Info | Now listening on: http://localhost:5185 
+2025-03-04 21:05:48.7121 | Debug | Loaded hosting startup assembly HelloGreetingApplication 
+2025-03-04 21:05:48.7121 | Debug | Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-04 21:05:48.7121 | Debug | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-04 21:05:48.7121 | Debug | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-04 21:05:48.8146 | Info | Application started. Press Ctrl+C to shut down. 
+2025-03-04 21:05:48.8154 | Info | Hosting environment: Development 
+2025-03-04 21:05:48.8154 | Info | Content root path: C:\Users\user\Desktop\GreetingApplication_GIT\GreetingApplication_2384200077\HelloGreetingApplication\ 
+2025-03-04 21:05:48.8154 | Debug | Hosting started 
+2025-03-04 21:05:49.0186 | Debug | Connection id "0HNAR68UJJ42B" accepted. 
+2025-03-04 21:05:49.0242 | Debug | Connection id "0HNAR68UJJ42B" started. 
+2025-03-04 21:05:49.0366 | Debug | Connection id "0HNAR68UJJ42C" accepted. 
+2025-03-04 21:05:49.0366 | Debug | Connection id "0HNAR68UJJ42C" started. 
+2025-03-04 21:05:49.0584 | Debug | Connection id "0HNAR68UJJ42C" received FIN. 
+2025-03-04 21:05:49.0584 | Debug | Connection id "0HNAR68UJJ42B" received FIN. 
+2025-03-04 21:05:49.0731 | Debug | Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-04 21:05:49.0731 | Debug | Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-04 21:05:49.1480 | Debug | Connection id "0HNAR68UJJ42C" stopped. 
+2025-03-04 21:05:49.1480 | Debug | Connection id "0HNAR68UJJ42B" stopped. 
+2025-03-04 21:05:49.1480 | Debug | Connection id "0HNAR68UJJ42B" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-04 21:05:49.1480 | Debug | Connection id "0HNAR68UJJ42C" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-04 21:05:49.2949 | Debug | Connection id "0HNAR68UJJ42D" accepted. 
+2025-03-04 21:05:49.3130 | Debug | Connection id "0HNAR68UJJ42D" started. 
+2025-03-04 21:05:49.4027 | Debug | Connection 0HNAR68UJJ42D established using the following protocol: Tls12 
+2025-03-04 21:05:49.4957 | Info | Request starting HTTP/2 GET https://localhost:7021/Swagger/index.html - - 
+2025-03-04 21:05:49.8215 | Debug | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-04 21:05:49.8699 | Debug | No candidates found for the request path '/Swagger/index.html' 
+2025-03-04 21:05:49.8699 | Debug | Request did not match any endpoints 
+2025-03-04 21:05:49.9671 | Debug | Response markup is scheduled to include Browser Link script injection. 
+2025-03-04 21:05:49.9671 | Debug | Response markup is scheduled to include browser refresh script injection. 
+2025-03-04 21:05:49.9967 | Debug | Response markup was updated to include Browser Link script injection. 
+2025-03-04 21:05:49.9967 | Debug | Response markup was updated to include browser refresh script injection. 
+2025-03-04 21:05:50.0245 | Info | Request finished HTTP/2 GET https://localhost:7021/Swagger/index.html - - - 200 - text/html;charset=utf-8 516.4936ms 
+2025-03-04 21:05:50.0639 | Info | Request starting HTTP/2 GET https://localhost:7021/_vs/browserLink - - 
+2025-03-04 21:05:50.0639 | Info | Request starting HTTP/2 GET https://localhost:7021/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 21:05:50.0771 | Info | Request finished HTTP/2 GET https://localhost:7021/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 13.2119ms 
+2025-03-04 21:05:50.2600 | Info | Request finished HTTP/2 GET https://localhost:7021/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 196.0375ms 
+2025-03-04 21:05:50.3323 | Info | Request starting HTTP/2 GET https://localhost:7021/Swagger/v1/swagger.json - - 
+2025-03-04 21:05:50.3323 | Debug | No candidates found for the request path '/Swagger/v1/swagger.json' 
+2025-03-04 21:05:50.3323 | Debug | Request did not match any endpoints 
+2025-03-04 21:05:50.3323 | Info | Request finished HTTP/2 GET https://localhost:7021/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.7057ms 
+2025-03-04 21:05:54.7757 | Debug | Connection id "0HNAR68UJJ42D" received FIN. 
+2025-03-04 21:05:54.7860 | Debug | Connection id "0HNAR68UJJ42D" is closed. The last processed stream ID was 7. 
+2025-03-04 21:05:54.7860 | Debug | Connection id "0HNAR68UJJ42D" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-04 21:05:54.8281 | Debug | Connection id "0HNAR68UJJ42D" stopped. 
+2025-03-04 21:06:11.3050 | Debug | Connection id "0HNAR68UJJ42E" accepted. 
+2025-03-04 21:06:11.3050 | Debug | Connection id "0HNAR68UJJ42E" started. 
+2025-03-04 21:06:11.3290 | Debug | Connection 0HNAR68UJJ42E established using the following protocol: Tls12 
+2025-03-04 21:06:11.3290 | Info | Request starting HTTP/2 GET https://localhost:7021/HelloGreeting - - 
+2025-03-04 21:06:11.3375 | Debug | 1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-04 21:06:11.3375 | Debug | Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-04 21:06:11.3375 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:06:11.3511 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-04 21:06:11.3511 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:06:11.3802 | Info | Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 21:06:11.3827 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-04 21:06:11.3827 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-04 21:06:11.3827 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-04 21:06:11.3827 | Debug | Execution plan of exception filters (in the following order): None 
+2025-03-04 21:06:11.3827 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-04 21:06:11.3827 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:06:11.3827 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:06:11.3827 | Info | GET request received to fetch all greetings. 
+2025-03-04 21:06:11.3827 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-04 21:06:11.3827 | Debug | No information found on request to perform content negotiation. 
+2025-03-04 21:06:11.3827 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-04 21:06:11.3827 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-04 21:06:11.4079 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-04 21:06:11.4079 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ModelLayer.Model.RequestDTO, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 21:06:11.4280 | Info | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication) in 34.2374ms 
+2025-03-04 21:06:11.4280 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:06:11.4280 | Info | Request finished HTTP/2 GET https://localhost:7021/HelloGreeting - - - 200 - application/json;+charset=utf-8 98.7285ms 
+2025-03-04 21:06:19.8148 | Debug | Connection id "0HNAR68UJJ42E" received FIN. 
+2025-03-04 21:06:19.8169 | Debug | Connection id "0HNAR68UJJ42E" is closed. The last processed stream ID was 1. 
+2025-03-04 21:06:19.8169 | Debug | Connection id "0HNAR68UJJ42E" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-04 21:06:19.8368 | Debug | Connection id "0HNAR68UJJ42E" stopped. 
+2025-03-04 21:11:33.5463 | Info | HelloGreetingApplication is starting. 
+2025-03-04 21:11:33.8736 | Debug | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-04 21:11:33.9272 | Debug | Hosting starting 
+2025-03-04 21:11:34.1550 | Debug | Using development certificate: CN=localhost (Thumbprint: 74D550BFEDF980A632FEAD55DADED9107E4DE1C7) 
+2025-03-04 21:11:34.2352 | Info | Now listening on: https://localhost:7021 
+2025-03-04 21:11:34.2352 | Info | Now listening on: http://localhost:5185 
+2025-03-04 21:11:34.2352 | Debug | Loaded hosting startup assembly HelloGreetingApplication 
+2025-03-04 21:11:34.2352 | Debug | Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-04 21:11:34.2352 | Debug | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-04 21:11:34.2375 | Debug | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-04 21:11:34.3123 | Info | Application started. Press Ctrl+C to shut down. 
+2025-03-04 21:11:34.3123 | Info | Hosting environment: Development 
+2025-03-04 21:11:34.3123 | Info | Content root path: C:\Users\user\Desktop\GreetingApplication_GIT\GreetingApplication_2384200077\HelloGreetingApplication\ 
+2025-03-04 21:11:34.3123 | Debug | Hosting started 
+2025-03-04 21:11:34.5738 | Debug | Connection id "0HNAR6C5J33PU" received FIN. 
+2025-03-04 21:11:34.5738 | Debug | Connection id "0HNAR6C5J33PV" received FIN. 
+2025-03-04 21:11:34.5867 | Debug | Connection id "0HNAR6C5J33PV" accepted. 
+2025-03-04 21:11:34.5867 | Debug | Connection id "0HNAR6C5J33PU" accepted. 
+2025-03-04 21:11:34.5867 | Debug | Connection id "0HNAR6C5J33PV" started. 
+2025-03-04 21:11:34.5867 | Debug | Connection id "0HNAR6C5J33PU" started. 
+2025-03-04 21:11:34.6344 | Debug | Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-04 21:11:34.6344 | Debug | Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-04 21:11:34.6993 | Debug | Connection id "0HNAR6C5J33PV" stopped. 
+2025-03-04 21:11:34.6993 | Debug | Connection id "0HNAR6C5J33PU" stopped. 
+2025-03-04 21:11:34.6993 | Debug | Connection id "0HNAR6C5J33PU" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-04 21:11:34.6993 | Debug | Connection id "0HNAR6C5J33PV" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-04 21:11:34.8063 | Debug | Connection id "0HNAR6C5J33Q0" accepted. 
+2025-03-04 21:11:34.8063 | Debug | Connection id "0HNAR6C5J33Q0" started. 
+2025-03-04 21:11:34.9000 | Debug | Connection 0HNAR6C5J33Q0 established using the following protocol: Tls12 
+2025-03-04 21:11:34.9913 | Info | Request starting HTTP/2 GET https://localhost:7021/Swagger/index.html - - 
+2025-03-04 21:11:35.2447 | Debug | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-04 21:11:35.2792 | Debug | No candidates found for the request path '/Swagger/index.html' 
+2025-03-04 21:11:35.2792 | Debug | Request did not match any endpoints 
+2025-03-04 21:11:35.3428 | Debug | Response markup is scheduled to include Browser Link script injection. 
+2025-03-04 21:11:35.3428 | Debug | Response markup is scheduled to include browser refresh script injection. 
+2025-03-04 21:11:35.3579 | Debug | Response markup was updated to include Browser Link script injection. 
+2025-03-04 21:11:35.3579 | Debug | Response markup was updated to include browser refresh script injection. 
+2025-03-04 21:11:35.3579 | Info | Request finished HTTP/2 GET https://localhost:7021/Swagger/index.html - - - 200 - text/html;charset=utf-8 375.6287ms 
+2025-03-04 21:11:35.3932 | Info | Request starting HTTP/2 GET https://localhost:7021/_vs/browserLink - - 
+2025-03-04 21:11:35.3932 | Info | Request starting HTTP/2 GET https://localhost:7021/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 21:11:35.4014 | Info | Request finished HTTP/2 GET https://localhost:7021/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 7.4835ms 
+2025-03-04 21:11:35.4679 | Info | Request finished HTTP/2 GET https://localhost:7021/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.6345ms 
+2025-03-04 21:11:35.5440 | Info | Request starting HTTP/2 GET https://localhost:7021/Swagger/v1/swagger.json - - 
+2025-03-04 21:11:35.5877 | Debug | No candidates found for the request path '/Swagger/v1/swagger.json' 
+2025-03-04 21:11:35.6005 | Debug | Request did not match any endpoints 
+2025-03-04 21:11:35.6005 | Info | Request finished HTTP/2 GET https://localhost:7021/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 66.5812ms 
+2025-03-04 21:11:42.3320 | Info | Request starting HTTP/2 GET https://localhost:7021/HelloGreeting/greeting - - 
+2025-03-04 21:11:42.3320 | Debug | 1 candidate(s) found for the request path '/HelloGreeting/greeting' 
+2025-03-04 21:11:42.3472 | Debug | Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage (HelloGreetingApplication)' with route pattern 'HelloGreeting/greeting' is valid for the request path '/HelloGreeting/greeting' 
+2025-03-04 21:11:42.3472 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage (HelloGreetingApplication)' 
+2025-03-04 21:11:42.3898 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-04 21:11:42.3980 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage (HelloGreetingApplication)' 
+2025-03-04 21:11:42.3980 | Info | Route matched with {action = "GetGreetingMessage", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetGreetingMessage() on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 21:11:42.3980 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-04 21:11:42.4264 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-04 21:11:42.4264 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-04 21:11:42.4264 | Debug | Execution plan of exception filters (in the following order): None 
+2025-03-04 21:11:42.4264 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-04 21:11:42.4264 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:11:42.4264 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:11:42.4264 | Info | GET request received to fetch greeting message from Business Layer. 
+2025-03-04 21:11:42.4264 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-04 21:11:42.4462 | Debug | No information found on request to perform content negotiation. 
+2025-03-04 21:11:42.4462 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-04 21:11:42.4462 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-04 21:11:42.4462 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-04 21:11:42.4462 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 21:11:42.4627 | Info | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage (HelloGreetingApplication) in 26.1152ms 
+2025-03-04 21:11:42.4627 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage (HelloGreetingApplication)' 
+2025-03-04 21:11:42.4627 | Info | Request finished HTTP/2 GET https://localhost:7021/HelloGreeting/greeting - - - 200 - application/json;+charset=utf-8 132.4452ms 
+2025-03-04 21:11:56.1621 | Info | Request starting HTTP/2 GET https://localhost:7021/HelloGreeting - - 
+2025-03-04 21:11:56.1621 | Debug | 1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-04 21:11:56.1621 | Debug | Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-04 21:11:56.1621 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:11:56.1621 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-04 21:11:56.1621 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:11:56.1621 | Info | Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 21:11:56.1621 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-04 21:11:56.1621 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-04 21:11:56.1621 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-04 21:11:56.1621 | Debug | Execution plan of exception filters (in the following order): None 
+2025-03-04 21:11:56.1771 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-04 21:11:56.1771 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:11:56.1771 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:11:56.1771 | Info | GET request received to fetch all greetings. 
+2025-03-04 21:11:56.1771 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-04 21:11:56.1771 | Debug | No information found on request to perform content negotiation. 
+2025-03-04 21:11:56.1771 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-04 21:11:56.1771 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-04 21:11:56.1771 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-04 21:11:56.1771 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ModelLayer.Model.RequestDTO, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 21:11:56.2174 | Info | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication) in 39.7524ms 
+2025-03-04 21:11:56.2174 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:11:56.2174 | Info | Request finished HTTP/2 GET https://localhost:7021/HelloGreeting - - - 200 - application/json;+charset=utf-8 56.6083ms 
+2025-03-04 21:12:20.8202 | Info | Request starting HTTP/2 POST https://localhost:7021/HelloGreeting application/json 44 
+2025-03-04 21:12:20.8202 | Debug | 1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-04 21:12:20.8202 | Debug | Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-04 21:12:20.8202 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' 
+2025-03-04 21:12:20.8202 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-04 21:12:20.8202 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' 
+2025-03-04 21:12:20.9091 | Info | Route matched with {action = "Post", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(ModelLayer.Model.RequestDTO) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 21:12:20.9106 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-04 21:12:20.9106 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-04 21:12:20.9106 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-04 21:12:20.9106 | Debug | Execution plan of exception filters (in the following order): None 
+2025-03-04 21:12:20.9106 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-04 21:12:20.9106 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:12:20.9106 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:12:20.9295 | Debug | Attempting to bind parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO' ... 
+2025-03-04 21:12:20.9295 | Debug | Attempting to bind parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO' using the name '' in request data ... 
+2025-03-04 21:12:20.9295 | Debug | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-04 21:12:20.9295 | Debug | Connection id "0HNAR6C5J33Q0", Request id "0HNAR6C5J33Q0:0000000D": started reading request body. 
+2025-03-04 21:12:20.9295 | Debug | Connection id "0HNAR6C5J33Q0", Request id "0HNAR6C5J33Q0:0000000D": done reading request body. 
+2025-03-04 21:12:20.9498 | Debug | JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.RequestDTO' 
+2025-03-04 21:12:20.9498 | Debug | Done attempting to bind parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO'. 
+2025-03-04 21:12:20.9498 | Debug | Done attempting to bind parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO'. 
+2025-03-04 21:12:20.9498 | Debug | Attempting to validate the bound parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO' ... 
+2025-03-04 21:12:20.9676 | Debug | Done attempting to validate the bound parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO'. 
+2025-03-04 21:12:20.9676 | Info | New greeting added. 
+2025-03-04 21:12:20.9676 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-04 21:12:20.9734 | Debug | No information found on request to perform content negotiation. 
+2025-03-04 21:12:20.9734 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-04 21:12:20.9734 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-04 21:12:20.9734 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-04 21:12:20.9734 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 21:12:20.9734 | Info | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication) in 61.6739ms 
+2025-03-04 21:12:20.9734 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' 
+2025-03-04 21:12:20.9734 | Info | Request finished HTTP/2 POST https://localhost:7021/HelloGreeting application/json 44 - 200 - application/json;+charset=utf-8 159.0391ms 
+2025-03-04 21:12:23.0462 | Info | Request starting HTTP/2 POST https://localhost:7021/HelloGreeting application/json 44 
+2025-03-04 21:12:23.0462 | Debug | 1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-04 21:12:23.0462 | Debug | Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-04 21:12:23.0462 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' 
+2025-03-04 21:12:23.0462 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-04 21:12:23.0505 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' 
+2025-03-04 21:12:23.0505 | Info | Route matched with {action = "Post", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(ModelLayer.Model.RequestDTO) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 21:12:23.0505 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-04 21:12:23.0505 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-04 21:12:23.0505 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-04 21:12:23.0505 | Debug | Execution plan of exception filters (in the following order): None 
+2025-03-04 21:12:23.0505 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-04 21:12:23.0505 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:12:23.0505 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:12:23.0505 | Debug | Attempting to bind parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO' ... 
+2025-03-04 21:12:23.0505 | Debug | Attempting to bind parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO' using the name '' in request data ... 
+2025-03-04 21:12:23.0505 | Debug | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-04 21:12:23.0505 | Debug | Connection id "0HNAR6C5J33Q0", Request id "0HNAR6C5J33Q0:0000000F": started reading request body. 
+2025-03-04 21:12:23.0505 | Debug | Connection id "0HNAR6C5J33Q0", Request id "0HNAR6C5J33Q0:0000000F": done reading request body. 
+2025-03-04 21:12:23.0505 | Debug | JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.RequestDTO' 
+2025-03-04 21:12:23.0505 | Debug | Done attempting to bind parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO'. 
+2025-03-04 21:12:23.0505 | Debug | Done attempting to bind parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO'. 
+2025-03-04 21:12:23.0505 | Debug | Attempting to validate the bound parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO' ... 
+2025-03-04 21:12:23.0505 | Debug | Done attempting to validate the bound parameter 'requestDTO' of type 'ModelLayer.Model.RequestDTO'. 
+2025-03-04 21:12:23.0981 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-04 21:12:23.0981 | Debug | No information found on request to perform content negotiation. 
+2025-03-04 21:12:23.0981 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-04 21:12:23.0981 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-04 21:12:23.0981 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-04 21:12:23.0981 | Info | Executing BadRequestObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 21:12:23.0981 | Info | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication) in 46.7234ms 
+2025-03-04 21:12:23.0981 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' 
+2025-03-04 21:12:23.0981 | Info | Request finished HTTP/2 POST https://localhost:7021/HelloGreeting application/json 44 - 400 - application/json;+charset=utf-8 58.3503ms 
+2025-03-04 21:12:28.3495 | Info | Request starting HTTP/2 GET https://localhost:7021/HelloGreeting - - 
+2025-03-04 21:12:28.3495 | Debug | 1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-04 21:12:28.3495 | Debug | Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-04 21:12:28.3495 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:12:28.3495 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-04 21:12:28.3495 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:12:28.3495 | Info | Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 21:12:28.3495 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-04 21:12:28.3637 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-04 21:12:28.3637 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-04 21:12:28.3637 | Debug | Execution plan of exception filters (in the following order): None 
+2025-03-04 21:12:28.3637 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-04 21:12:28.3637 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:12:28.3637 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication) 
+2025-03-04 21:12:28.3637 | Info | GET request received to fetch all greetings. 
+2025-03-04 21:12:28.3637 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-04 21:12:28.3637 | Debug | No information found on request to perform content negotiation. 
+2025-03-04 21:12:28.3637 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-04 21:12:28.3637 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-04 21:12:28.3637 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-04 21:12:28.3637 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ModelLayer.Model.RequestDTO, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 21:12:28.3792 | Info | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication) in 11.3717ms 
+2025-03-04 21:12:28.3792 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 21:12:28.3792 | Info | Request finished HTTP/2 GET https://localhost:7021/HelloGreeting - - - 200 - application/json;+charset=utf-8 32.6040ms 
