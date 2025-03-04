@@ -4,12 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.Interface;
+using RepositoryLayer.Interface;
 using ModelLayer.Model;
 
 namespace BusinessLayer.Service
 {
     public class GreetingBL : IGreetingBL
     {
+        private readonly IGreetingRL _greetingRL;
+
+        public GreetingBL(IGreetingRL greetingRL)
+        {
+            _greetingRL = greetingRL;
+        }
+
         public string GreetingMessage()
         {
             return "Hello World!";
@@ -33,6 +41,18 @@ namespace BusinessLayer.Service
             {
                 return "Hello World!";
             }
+        }
+
+        public RequestDTO GreetingMessageBL(RequestDTO requestDTO)
+        {
+            var result = _greetingRL.SaveGreetingRL(requestDTO);
+            if (result == null)
+                return null;
+
+            return new RequestDTO
+            {
+                Message = result.Message
+            };
         }
     }
 }

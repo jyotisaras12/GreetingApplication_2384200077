@@ -11,5 +11,6 @@ namespace BusinessLayer.Interface
     {
         string GreetingMessage();
         string GreetingMessageWithName(string? firstName, string? lastName);
+        RequestDTO GreetingMessageBL(RequestDTO requestDTO);
     }
 }

@@ -1,17 +1,7 @@
 [
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Get",
-    "RelativePath": "HelloGreeting",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Post",
+    "Method": "SaveGreetingMessage",
     "RelativePath": "HelloGreeting",
     "HttpMethod": "POST",
     "IsController": true,
@@ -20,64 +10,6 @@
       {
         "Name": "requestDTO",
         "Type": "ModelLayer.Model.RequestDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Put",
-    "RelativePath": "HelloGreeting/{Id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "requestDTO",
-        "Type": "ModelLayer.Model.RequestDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Patch",
-    "RelativePath": "HelloGreeting/{Id}",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "requestDTO",
-        "Type": "ModelLayer.Model.RequestDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Delete",
-    "RelativePath": "HelloGreeting/{Id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
