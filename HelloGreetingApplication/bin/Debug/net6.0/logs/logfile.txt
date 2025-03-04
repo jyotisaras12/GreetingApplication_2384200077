@@ -1300,3 +1300,7 @@
 2025-03-04 23:05:02.1039 | Info | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage (HelloGreetingApplication) in 24.1647ms 
 2025-03-04 23:05:02.1039 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage (HelloGreetingApplication)' 
 2025-03-04 23:05:02.1039 | Info | Request finished HTTP/2 GET https://localhost:7021/HelloGreeting/greeting - - - 200 - application/json;+charset=utf-8 98.3157ms 
+2025-03-04 23:05:04.6379 | Debug | Connection id "0HNAR8BEDFDVM" received FIN. 
+2025-03-04 23:05:04.6379 | Debug | Connection id "0HNAR8BEDFDVM" is closed. The last processed stream ID was 1. 
+2025-03-04 23:05:04.6379 | Debug | Connection id "0HNAR8BEDFDVM" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-04 23:05:04.6509 | Debug | Connection id "0HNAR8BEDFDVM" stopped. 
