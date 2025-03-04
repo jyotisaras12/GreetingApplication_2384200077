@@ -45,6 +45,29 @@
         }
       }
     },
+    "/HelloGreeting/{Id}": {
+      "get": {
+        "tags": [
+          "HelloGreeting"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/HelloGreeting": {
       "post": {
         "tags": [

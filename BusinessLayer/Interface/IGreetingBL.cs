@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ModelLayer.Model;
+using RepositoryLayer.Entity;
 
 namespace BusinessLayer.Interface
 {
@@ -12,5 +13,6 @@ namespace BusinessLayer.Interface
         string GreetingMessage();
         string GreetingMessageWithName(string? firstName, string? lastName);
         RequestDTO GreetingMessageBL(RequestDTO requestDTO);
+        GreetingEntity GreetingMessageByIdBL(int Id);
     }
 }

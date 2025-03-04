@@ -30,5 +30,10 @@ namespace RepositoryLayer.Service
                 Message = requestDTO.Message
             };
         }
+
+        public GreetingEntity? GreetingByIdRL(int Id)
+        {
+            return _dbContext.Greetings.FirstOrDefault(greet => greet.Id == Id);
+        }
     }
 }

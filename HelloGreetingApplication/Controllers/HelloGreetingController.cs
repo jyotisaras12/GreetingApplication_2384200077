@@ -2,6 +2,7 @@ using BusinessLayer.Interface;
 using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
+using RepositoryLayer.Entity;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -54,6 +55,26 @@ namespace HelloGreetingApplication.Controllers
             responseModel.Message = "Greeting message retrieved successfully!";
             responseModel.Data = greetingMessageWithName;
             return Ok(responseModel);
+        }
+
+        [HttpGet("{Id}")]
+        public IActionResult GetGreetingMessageById(int Id)
+        {
+            _logger.LogInformation($"GET request received to fetch greeting by ID: {Id}");
+            var greeting = _greetingBL.GreetingMessageByIdBL(Id);
+            ResponseModel<GreetingEntity> greetingResponse = new ResponseModel<GreetingEntity>(); ;
+            if (greeting == null)
+            {
+                greetingResponse.Success = false;
+                greetingResponse.Message = "Greeting not found!";
+                greetingResponse.Data = null;
+                return NotFound(greetingResponse); 
+            }
+
+            greetingResponse.Success = true;
+            greetingResponse.Message = "Greeting message retrieved successfully!";
+            greetingResponse.Data = greeting;
+            return Ok(greetingResponse);
         }
 
         /// <summary>
