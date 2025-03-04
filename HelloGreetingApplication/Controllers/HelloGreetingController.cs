@@ -57,6 +57,11 @@ namespace HelloGreetingApplication.Controllers
             return Ok(responseModel);
         }
 
+        /// <summary>
+        /// Get method to fetch greeting message by Id
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns>response model</returns>
         [HttpGet("{Id}")]
         public IActionResult GetGreetingMessageById(int Id)
         {
@@ -65,6 +70,7 @@ namespace HelloGreetingApplication.Controllers
             ResponseModel<GreetingEntity> greetingResponse = new ResponseModel<GreetingEntity>(); ;
             if (greeting == null)
             {
+                _logger.LogWarning($"GET request failed: Greeting with Id = {Id} not found.");
                 greetingResponse.Success = false;
                 greetingResponse.Message = "Greeting not found!";
                 greetingResponse.Data = null;
@@ -77,6 +83,10 @@ namespace HelloGreetingApplication.Controllers
             return Ok(greetingResponse);
         }
 
+        /// <summary>
+        /// Get method to fetch all the greeting messages in the repository
+        /// </summary>
+        /// <returns>response model</returns>
         [HttpGet]
         [Route("AllGreetings")]
         public IActionResult GetGreetingsList()
@@ -86,6 +96,7 @@ namespace HelloGreetingApplication.Controllers
             ResponseModel<List<GreetingEntity>> greetingResponse = new ResponseModel<List<GreetingEntity>>(); ;
             if (greetings == null || !greetings.Any())
             {
+                _logger.LogWarning($"GET request failed: Greetings not found in the repository.");
                 greetingResponse.Success = false;
                 greetingResponse.Message = "Greeting not found!";
                 greetingResponse.Data = null;
@@ -114,5 +125,43 @@ namespace HelloGreetingApplication.Controllers
             response.Data = result;
             return Ok(response);
         }
+
+        /// <summary>
+        /// Put method to edit greeting messages in the repository
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <param name="newGreeting"></param>
+        /// <returns>response model</returns>
+        [HttpPut]
+        [Route("{Id}")]
+        public IActionResult EditGreetingMessage(int Id, GreetingEntity newGreeting)
+        {
+            _logger.LogInformation("PUT request to edit greeting messages in the repository.");
+            ResponseModel<GreetingEntity>response = new ResponseModel<GreetingEntity>();
+            if (newGreeting == null || Id != newGreeting.Id)
+            {
+                _logger.LogWarning("PUT request failed: Invalid greeting request made.");
+                response.Success = false;
+                response.Message = "Invalid greeting message!";
+                response.Data = null;
+                return BadRequest(response);
+            }
+
+            var result = _greetingBL.EditGreetingBL(Id, newGreeting);
+            if (result == null)
+            {
+                _logger.LogWarning($"PUT request failed: Greeting not found in the repository.");
+                response.Success = false;
+                response.Message = "Greeting not found!";
+                response.Data = null;
+                return NotFound(response);
+            }
+
+            response.Success = true;
+            response.Message = "Greeting message updated successfully!";
+            response.Data = result;
+            return Ok(response);
+        }
+
     }
 }

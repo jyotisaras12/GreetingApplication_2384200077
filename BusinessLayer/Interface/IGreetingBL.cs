@@ -15,5 +15,6 @@ namespace BusinessLayer.Interface
         RequestDTO GreetingMessageBL(RequestDTO requestDTO);
         GreetingEntity GreetingMessageByIdBL(int Id);
         List<GreetingEntity> ListGreetingMessagesBL();
+        GreetingEntity EditGreetingBL(int Id, GreetingEntity newGreeting);
     }
 }
