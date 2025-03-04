@@ -12,5 +12,6 @@ namespace RepositoryLayer.Interface
     {
         RequestDTO SaveGreetingRL(RequestDTO requestDTO);
         GreetingEntity GreetingByIdRL(int Id);
+        List<GreetingEntity> ListGreetingsRL();
     }
 }

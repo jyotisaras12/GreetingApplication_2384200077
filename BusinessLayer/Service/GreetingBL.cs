@@ -60,5 +60,10 @@ namespace BusinessLayer.Service
         {
             return _greetingRL.GreetingByIdRL(Id);
         }
+
+        public List<GreetingEntity> ListGreetingMessagesBL()
+        {
+            return _greetingRL.ListGreetingsRL();
+        }
     }
 }

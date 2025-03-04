@@ -77,6 +77,27 @@ namespace HelloGreetingApplication.Controllers
             return Ok(greetingResponse);
         }
 
+        [HttpGet]
+        [Route("AllGreetings")]
+        public IActionResult GetGreetingsList()
+        {
+            _logger.LogInformation($"GET request received to fetch all the greeting messages in the repository.");
+            var greetings = _greetingBL.ListGreetingMessagesBL();
+            ResponseModel<List<GreetingEntity>> greetingResponse = new ResponseModel<List<GreetingEntity>>(); ;
+            if (greetings == null || !greetings.Any())
+            {
+                greetingResponse.Success = false;
+                greetingResponse.Message = "Greeting not found!";
+                greetingResponse.Data = null;
+                return NotFound(greetingResponse);
+            }
+
+            greetingResponse.Success = true;
+            greetingResponse.Message = "Greeting messages retrieved successfully!";
+            greetingResponse.Data = greetings;
+            return Ok(greetingResponse);
+        }
+
         /// <summary>
         /// Post method to add greeting message in the Repository
         /// </summary>

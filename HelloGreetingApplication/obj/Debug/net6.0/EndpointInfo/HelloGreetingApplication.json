@@ -68,6 +68,18 @@
         }
       }
     },
+    "/HelloGreeting/AllGreetings": {
+      "get": {
+        "tags": [
+          "HelloGreeting"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/HelloGreeting": {
       "post": {
         "tags": [
