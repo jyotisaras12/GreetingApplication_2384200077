@@ -61,6 +61,23 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
+        /// Get method to fetch the personal greeting message with name
+        /// </summary>
+        /// <returns>response model</returns>
+        [HttpGet]
+        [Route("personalGreeting")]
+        public IActionResult GetGreetingMessageWithName([FromQuery] string? firstName, [FromQuery] string? lastName)
+        {
+            _logger.LogInformation("GET request received to fetch personal greeting message with name.");
+            string greetingMessageWithName = _greetingBL.GreetingMessageWithName(firstName, lastName);
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+            responseModel.Success = true;
+            responseModel.Message = "Greeting message retrieved successfully!";
+            responseModel.Data = greetingMessageWithName;
+            return Ok(responseModel);
+        }
+
+        /// <summary>
         /// Post method to add a key-value pair greeting
         /// </summary>
         /// <param name="requestDTO"></param>
