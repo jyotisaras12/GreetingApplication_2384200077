@@ -24,7 +24,7 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// Get method to fetch the greeting message from Business Layer
+        /// Method to fetch the greeting message from Business Layer
         /// </summary>
         /// <returns>response model</returns>
         [HttpGet]
@@ -41,7 +41,7 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// Get method to fetch the personal greeting message with name
+        /// Method to fetch the personal greeting message with name
         /// </summary>
         /// <returns>response model</returns>
         [HttpGet]
@@ -58,7 +58,7 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// Get method to fetch greeting message by Id
+        /// Method to fetch greeting message by Id
         /// </summary>
         /// <param name="Id"></param>
         /// <returns>response model</returns>
@@ -84,7 +84,7 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// Get method to fetch all the greeting messages in the repository
+        /// Method to fetch all the greeting messages in the repository
         /// </summary>
         /// <returns>response model</returns>
         [HttpGet]
@@ -110,7 +110,7 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// Post method to add greeting message in the Repository
+        /// Method to add greeting message in the Repository
         /// </summary>
         /// <param name="requestDTO"></param>
         /// <returns>reponse model</returns>
@@ -127,7 +127,7 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// Put method to edit greeting messages in the repository
+        /// Method to edit greeting messages in the repository
         /// </summary>
         /// <param name="Id"></param>
         /// <param name="newGreeting"></param>
@@ -160,6 +160,34 @@ namespace HelloGreetingApplication.Controllers
             response.Success = true;
             response.Message = "Greeting message updated successfully!";
             response.Data = result;
+            return Ok(response);
+        }
+
+        /// <summary>
+        /// Method to delete greeting messages from the repository
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        [Route("{Id}")]
+        public IActionResult DeleteGreetingMessage(int Id)
+        {
+            _logger.LogInformation("DELETE request to delete greeting messages in the repository.");
+            ResponseModel<string> response = new ResponseModel<string>();
+            
+            var result = _greetingBL.DeleteGreetingBL(Id);
+            if (result == false)
+            {
+                _logger.LogWarning($"DELETE request failed: Greeting not found in the repository.");
+                response.Success = false;
+                response.Message = "Greeting not found!";
+                response.Data = null;
+                return NotFound(response);
+            }
+
+            response.Success = true;
+            response.Message = "Greeting message deleted successfully!";
+            response.Data = $"Deleted Id: {Id}";
             return Ok(response);
         }
 

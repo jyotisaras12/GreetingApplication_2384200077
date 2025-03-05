@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelloGreetingApplication</name>
+    </assembly>
+    <members>
+        <member name="T:HelloGreetingApplication.Controllers.HelloGreetingController">
+            <summary>
+            Class providing API for HelloGreeting
+            </summary>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage">
+            <summary>
+            Method to fetch the greeting message from Business Layer
+            </summary>
+            <returns>response model</returns>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessageWithName(System.String,System.String)">
+            <summary>
+            Method to fetch the personal greeting message with name
+            </summary>
+            <returns>response model</returns>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessageById(System.Int32)">
+            <summary>
+            Method to fetch greeting message by Id
+            </summary>
+            <param name="Id"></param>
+            <returns>response model</returns>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingsList">
+            <summary>
+            Method to fetch all the greeting messages in the repository
+            </summary>
+            <returns>response model</returns>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.SaveGreetingMessage(ModelLayer.Model.RequestDTO)">
+            <summary>
+            Method to add greeting message in the Repository
+            </summary>
+            <param name="requestDTO"></param>
+            <returns>reponse model</returns>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.EditGreetingMessage(System.Int32,RepositoryLayer.Entity.GreetingEntity)">
+            <summary>
+            Method to edit greeting messages in the repository
+            </summary>
+            <param name="Id"></param>
+            <param name="newGreeting"></param>
+            <returns>response model</returns>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.DeleteGreetingMessage(System.Int32)">
+            <summary>
+            Method to delete greeting messages from the repository
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -19,11 +19,13 @@ namespace BusinessLayer.Service
             _greetingRL = greetingRL;
         }
 
+        // UC2: Method to get simple greeting message "Hello World!"
         public string GreetingMessage()
         {
             return "Hello World!";
         }
 
+        // UC3: Method to get greeting message with name
         public string GreetingMessageWithName(string? firstName, string? lastName)
         {
             if (!string.IsNullOrWhiteSpace(firstName) && !string.IsNullOrWhiteSpace(lastName))
@@ -44,6 +46,7 @@ namespace BusinessLayer.Service
             }
         }
 
+        // UC4: Method to save greeting messages in the repository
         public RequestDTO GreetingMessageBL(RequestDTO requestDTO)
         {
             var result = _greetingRL.SaveGreetingRL(requestDTO);
@@ -56,19 +59,28 @@ namespace BusinessLayer.Service
             };
         }
 
+        // UC5: Method to find greeting message by Id
         public GreetingEntity GreetingMessageByIdBL(int Id)
         {
             return _greetingRL.GreetingByIdRL(Id);
         }
 
+        // UC6: Method to list all the greeting messages in the repository
         public List<GreetingEntity> ListGreetingMessagesBL()
         {
             return _greetingRL.ListGreetingsRL();
         }
 
+        // UC7: Method to edit the greeting message in the repository
         public GreetingEntity EditGreetingBL(int Id, GreetingEntity newGreeting)
         {
             return _greetingRL.EditGreetingRL(Id, newGreeting);
+        }
+
+        // UC8: Method to delete greeting message by Id from the repository
+        public bool DeleteGreetingBL(int Id)
+        {
+            return _greetingRL.DeleteGreetingRL(Id);
         }
     }
 }

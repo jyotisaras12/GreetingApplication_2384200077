@@ -19,6 +19,8 @@ namespace RepositoryLayer.Service
         {
             _dbContext = dbContext;
         }
+
+        // UC4: Method to save greeting messages in the repository
         public RequestDTO SaveGreetingRL(RequestDTO requestDTO)
         {
             var greeting = new GreetingEntity { Message = requestDTO.Message };
@@ -31,16 +33,19 @@ namespace RepositoryLayer.Service
             };
         }
 
+        // UC5: Method to find greeting message by Id
         public GreetingEntity? GreetingByIdRL(int Id)
         {
             return _dbContext.Greetings.FirstOrDefault(greet => greet.Id == Id);
         }
 
+        // UC6: Method to list all the greeting messages in the repository
         public List<GreetingEntity> ListGreetingsRL()
         {
             return _dbContext.Greetings.ToList();
         }
 
+        // UC7: Method to edit the greeting message in the repository
         public GreetingEntity EditGreetingRL(int Id, GreetingEntity newGreeting)
         {
             var existingGreeting = _dbContext.Greetings.FirstOrDefault(greet => greet.Id == Id);
@@ -51,6 +56,19 @@ namespace RepositoryLayer.Service
             _dbContext.SaveChanges();
 
             return existingGreeting;
+        }
+
+        // UC8: Method to delete greeting message by Id from the repository
+        public bool DeleteGreetingRL(int Id)
+        {
+            var greeting = _dbContext.Greetings.FirstOrDefault(greet => greet.Id == Id);
+            if (greeting == null)
+                return false;
+
+            _dbContext.Greetings.Remove(greeting);
+            _dbContext.SaveChanges();
+
+            return true;
         }
 
     }
