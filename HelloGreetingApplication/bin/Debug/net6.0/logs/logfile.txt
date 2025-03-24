@@ -6695,3 +6695,579 @@ FROM [Greetings] AS [g]
 2025-03-24 21:20:43.8597 | Debug | Connection id "0HNBATEAOVAGO" is closed. The last processed stream ID was 1. 
 2025-03-24 21:20:43.8597 | Debug | Connection id "0HNBATEAOVAGO" sending FIN because: "The Socket transport's send loop completed gracefully." 
 2025-03-24 21:20:43.8742 | Debug | Connection id "0HNBATEAOVAGO" stopped. 
+2025-03-24 22:03:34.9631 | Info | HelloGreetingApplication is starting. 
+2025-03-24 22:03:36.6968 | Debug | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-24 22:03:36.9662 | Debug | Hosting starting 
+2025-03-24 22:03:37.5844 | Debug | Using development certificate: CN=localhost (Thumbprint: 74D550BFEDF980A632FEAD55DADED9107E4DE1C7) 
+2025-03-24 22:03:37.7335 | Info | Now listening on: https://localhost:7021 
+2025-03-24 22:03:37.7335 | Info | Now listening on: http://localhost:5185 
+2025-03-24 22:03:37.7335 | Debug | Loaded hosting startup assembly HelloGreetingApplication 
+2025-03-24 22:03:37.7335 | Debug | Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-24 22:03:37.7335 | Debug | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-24 22:03:37.7335 | Debug | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-24 22:03:37.7870 | Debug | Connection id "0HNBAU6GGI0B7" received FIN. 
+2025-03-24 22:03:37.7981 | Debug | Connection id "0HNBAU6GGI0B7" accepted. 
+2025-03-24 22:03:37.7981 | Debug | Connection id "0HNBAU6GGI0B7" started. 
+2025-03-24 22:03:37.8738 | Debug | Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-24 22:03:37.8738 | Info | Application started. Press Ctrl+C to shut down. 
+2025-03-24 22:03:38.0095 | Info | Hosting environment: Development 
+2025-03-24 22:03:38.0095 | Debug | Connection id "0HNBAU6GGI0B7" stopped. 
+2025-03-24 22:03:38.0095 | Info | Content root path: C:\Users\user\Desktop\GreetingApplication_GIT\GreetingApplication_2384200077\HelloGreetingApplication\ 
+2025-03-24 22:03:38.0095 | Debug | Hosting started 
+2025-03-24 22:03:38.0095 | Debug | Connection id "0HNBAU6GGI0B7" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-24 22:03:39.1644 | Debug | Connection id "0HNBAU6GGI0B8" accepted. 
+2025-03-24 22:03:39.3919 | Debug | Connection id "0HNBAU6GGI0B8" started. 
+2025-03-24 22:03:39.5799 | Debug | Connection 0HNBAU6GGI0B8 established using the following protocol: Tls12 
+2025-03-24 22:03:40.0105 | Info | Request starting HTTP/2 GET https://localhost:7021/Swagger/index.html - - 
+2025-03-24 22:03:40.8954 | Debug | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-24 22:03:41.0236 | Debug | No candidates found for the request path '/Swagger/index.html' 
+2025-03-24 22:03:41.0913 | Debug | Request did not match any endpoints 
+2025-03-24 22:03:41.4026 | Debug | Response markup is scheduled to include Browser Link script injection. 
+2025-03-24 22:03:41.4131 | Debug | Response markup is scheduled to include browser refresh script injection. 
+2025-03-24 22:03:41.5015 | Debug | Response markup was updated to include Browser Link script injection. 
+2025-03-24 22:03:41.5079 | Debug | Response markup was updated to include browser refresh script injection. 
+2025-03-24 22:03:41.5319 | Info | Request finished HTTP/2 GET https://localhost:7021/Swagger/index.html - - - 200 - text/html;charset=utf-8 1532.7379ms 
+2025-03-24 22:03:41.7511 | Info | Request starting HTTP/2 GET https://localhost:7021/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-24 22:03:41.8308 | Info | Request starting HTTP/2 GET https://localhost:7021/_vs/browserLink - - 
+2025-03-24 22:03:42.0071 | Info | Request finished HTTP/2 GET https://localhost:7021/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 255.9805ms 
+2025-03-24 22:03:42.4630 | Info | Request finished HTTP/2 GET https://localhost:7021/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 632.1958ms 
+2025-03-24 22:03:42.6845 | Info | Request starting HTTP/2 GET https://localhost:7021/Swagger/v1/swagger.json - - 
+2025-03-24 22:03:42.7025 | Debug | No candidates found for the request path '/Swagger/v1/swagger.json' 
+2025-03-24 22:03:42.7025 | Debug | Request did not match any endpoints 
+2025-03-24 22:03:42.7409 | Info | Request finished HTTP/2 GET https://localhost:7021/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 56.4473ms 
+2025-03-24 22:03:43.4316 | Debug | Connection id "0HNBAU6GGI0B8" received FIN. 
+2025-03-24 22:03:43.4547 | Debug | Connection id "0HNBAU6GGI0B8" is closed. The last processed stream ID was 7. 
+2025-03-24 22:03:43.4547 | Debug | Connection id "0HNBAU6GGI0B8" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-24 22:03:43.4635 | Debug | Connection id "0HNBAU6GGI0B8" stopped. 
+2025-03-24 22:04:34.6838 | Info | HelloGreetingApplication is starting. 
+2025-03-24 22:04:35.0176 | Error | HelloGreetingApplication startup failed. Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\user\Desktop\GreetingApplication_GIT\GreetingApplication_2384200077\HelloGreetingApplication\Program.cs:line 52
+2025-03-24 22:05:44.7112 | Info | HelloGreetingApplication is starting. 
+2025-03-24 22:05:45.0262 | Error | HelloGreetingApplication startup failed. Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\user\Desktop\GreetingApplication_GIT\GreetingApplication_2384200077\HelloGreetingApplication\Program.cs:line 52
+2025-03-25 01:25:32.7839 | Info | HelloGreetingApplication is starting. 
+2025-03-25 01:25:34.0946 | Debug | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-25 01:25:34.4033 | Debug | Hosting starting 
+2025-03-25 01:25:35.0836 | Debug | Using development certificate: CN=localhost (Thumbprint: 74D550BFEDF980A632FEAD55DADED9107E4DE1C7) 
+2025-03-25 01:25:35.1931 | Info | Now listening on: https://localhost:7021 
+2025-03-25 01:25:35.1941 | Info | Now listening on: http://localhost:5185 
+2025-03-25 01:25:35.1941 | Debug | Loaded hosting startup assembly HelloGreetingApplication 
+2025-03-25 01:25:35.1941 | Debug | Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-25 01:25:35.1941 | Debug | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-25 01:25:35.1941 | Debug | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-25 01:25:35.2795 | Info | Application started. Press Ctrl+C to shut down. 
+2025-03-25 01:25:35.2795 | Info | Hosting environment: Development 
+2025-03-25 01:25:35.2795 | Info | Content root path: C:\Users\user\Desktop\GreetingApplication_GIT\GreetingApplication_2384200077\HelloGreetingApplication\ 
+2025-03-25 01:25:35.2795 | Debug | Hosting started 
+2025-03-25 01:25:35.4664 | Debug | Connection id "0HNBB1NBRHLEL" accepted. 
+2025-03-25 01:25:35.4664 | Debug | Connection id "0HNBB1NBRHLEK" accepted. 
+2025-03-25 01:25:35.4664 | Debug | Connection id "0HNBB1NBRHLEL" received FIN. 
+2025-03-25 01:25:35.4664 | Debug | Connection id "0HNBB1NBRHLEK" received FIN. 
+2025-03-25 01:25:35.4664 | Debug | Connection id "0HNBB1NBRHLEL" started. 
+2025-03-25 01:25:35.4664 | Debug | Connection id "0HNBB1NBRHLEK" started. 
+2025-03-25 01:25:35.5333 | Debug | Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-25 01:25:35.5698 | Debug | Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-25 01:25:35.8485 | Debug | Connection id "0HNBB1NBRHLEL" stopped. 
+2025-03-25 01:25:35.8485 | Debug | Connection id "0HNBB1NBRHLEK" stopped. 
+2025-03-25 01:25:35.8579 | Debug | Connection id "0HNBB1NBRHLEK" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-25 01:25:35.8579 | Debug | Connection id "0HNBB1NBRHLEL" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-25 01:25:36.0127 | Debug | Connection id "0HNBB1NBRHLEM" accepted. 
+2025-03-25 01:25:36.0527 | Debug | Connection id "0HNBB1NBRHLEM" started. 
+2025-03-25 01:25:36.4190 | Debug | Connection 0HNBB1NBRHLEM established using the following protocol: Tls12 
+2025-03-25 01:25:36.5486 | Info | Request starting HTTP/2 GET https://localhost:7021/Swagger/index.html - - 
+2025-03-25 01:25:37.0349 | Debug | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-25 01:25:37.0945 | Debug | No candidates found for the request path '/Swagger/index.html' 
+2025-03-25 01:25:37.0945 | Debug | Request did not match any endpoints 
+2025-03-25 01:25:37.1977 | Debug | Response markup is scheduled to include Browser Link script injection. 
+2025-03-25 01:25:37.1977 | Debug | Response markup is scheduled to include browser refresh script injection. 
+2025-03-25 01:25:37.2452 | Debug | Response markup was updated to include Browser Link script injection. 
+2025-03-25 01:25:37.2452 | Debug | Response markup was updated to include browser refresh script injection. 
+2025-03-25 01:25:37.2688 | Info | Request finished HTTP/2 GET https://localhost:7021/Swagger/index.html - - - 200 - text/html;charset=utf-8 725.7642ms 
+2025-03-25 01:25:37.3963 | Info | Request starting HTTP/2 GET https://localhost:7021/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-25 01:25:37.3963 | Info | Request starting HTTP/2 GET https://localhost:7021/_vs/browserLink - - 
+2025-03-25 01:25:37.4256 | Info | Request finished HTTP/2 GET https://localhost:7021/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 29.2578ms 
+2025-03-25 01:25:37.8697 | Info | Request finished HTTP/2 GET https://localhost:7021/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 473.0618ms 
+2025-03-25 01:25:37.9592 | Info | Request starting HTTP/2 GET https://localhost:7021/Swagger/v1/swagger.json - - 
+2025-03-25 01:25:37.9665 | Debug | No candidates found for the request path '/Swagger/v1/swagger.json' 
+2025-03-25 01:25:37.9665 | Debug | Request did not match any endpoints 
+2025-03-25 01:25:37.9824 | Info | Request finished HTTP/2 GET https://localhost:7021/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 23.2255ms 
+2025-03-25 01:25:39.9538 | Debug | Connection id "0HNBB1NBRHLEM" received FIN. 
+2025-03-25 01:25:39.9678 | Debug | Connection id "0HNBB1NBRHLEM" is closed. The last processed stream ID was 7. 
+2025-03-25 01:25:39.9678 | Debug | Connection id "0HNBB1NBRHLEM" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-25 01:25:39.9831 | Debug | Connection id "0HNBB1NBRHLEM" stopped. 
+2025-03-25 01:26:16.7453 | Debug | Connection id "0HNBB1NBRHLEN" accepted. 
+2025-03-25 01:26:16.7632 | Debug | Connection id "0HNBB1NBRHLEN" started. 
+2025-03-25 01:26:16.7927 | Debug | Connection 0HNBB1NBRHLEN established using the following protocol: Tls12 
+2025-03-25 01:26:16.7927 | Info | Request starting HTTP/2 POST https://localhost:7021/api/User/register application/json 77 
+2025-03-25 01:26:16.7927 | Debug | 1 candidate(s) found for the request path '/api/User/register' 
+2025-03-25 01:26:16.8084 | Debug | Endpoint 'HelloGreetingApplication.Controllers.UserController.Register (HelloGreetingApplication)' with route pattern 'api/User/register' is valid for the request path '/api/User/register' 
+2025-03-25 01:26:16.8084 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.UserController.Register (HelloGreetingApplication)' 
+2025-03-25 01:26:16.8084 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-25 01:26:16.8084 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.UserController.Register (HelloGreetingApplication)' 
+2025-03-25 01:26:16.9084 | Info | Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(ModelLayer.Model.UserDTO) on controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication). 
+2025-03-25 01:26:16.9084 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-25 01:26:16.9084 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-25 01:26:16.9084 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-25 01:26:16.9084 | Debug | Execution plan of exception filters (in the following order): Middleware.GlobalExceptionFilter (Order: 0) 
+2025-03-25 01:26:16.9084 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-25 01:26:16.9084 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:26:17.2375 | Debug | An 'IServiceProvider' was created for internal use by Entity Framework. 
+2025-03-25 01:26:17.3053 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:26:17.3381 | Debug | Attempting to bind parameter 'user' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:26:17.3381 | Debug | Attempting to bind parameter 'user' of type 'ModelLayer.Model.UserDTO' using the name '' in request data ... 
+2025-03-25 01:26:17.3381 | Debug | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-25 01:26:17.3606 | Debug | Connection id "0HNBB1NBRHLEN", Request id "0HNBB1NBRHLEN:00000001": started reading request body. 
+2025-03-25 01:26:17.3606 | Debug | Connection id "0HNBB1NBRHLEN", Request id "0HNBB1NBRHLEN:00000001": done reading request body. 
+2025-03-25 01:26:17.3752 | Debug | JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.UserDTO' 
+2025-03-25 01:26:17.3752 | Debug | Done attempting to bind parameter 'user' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:26:17.3752 | Debug | Done attempting to bind parameter 'user' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:26:17.3752 | Debug | Attempting to validate the bound parameter 'user' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:26:17.3958 | Debug | Done attempting to validate the bound parameter 'user' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:26:17.4044 | Info | Register method called for Username: js12 
+2025-03-25 01:26:17.4044 | Info | Registration attempt for Username: js12 
+2025-03-25 01:26:18.7509 | Info | Entity Framework Core 6.0.36 initialized 'GreetingApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-25 01:26:18.9546 | Debug | Compiling query expression: 
+'DbSet<UserEntity>()
+    .Any(u => u.Username == __username_0 || u.Email == __email_1)' 
+2025-03-25 01:26:19.4717 | Debug | Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Users AS u
+            WHERE (u.Username == @__username_0) || (u.Email == @__email_1))), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    RepositoryLayer.Context.GreetingApplicationContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2025-03-25 01:26:19.5618 | Debug | Creating DbCommand for 'ExecuteReader'. 
+2025-03-25 01:26:19.6390 | Debug | Created DbCommand for 'ExecuteReader' (74ms). 
+2025-03-25 01:26:19.6623 | Debug | Opening connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.3669 | Debug | Opened connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.3846 | Debug | Executing DbCommand [Parameters=[@__username_0='?' (Size = 450), @__email_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE ([u].[Username] = @__username_0) OR ([u].[Email] = @__email_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2025-03-25 01:26:20.4900 | Info | Executed DbCommand (108ms) [Parameters=[@__username_0='?' (Size = 450), @__email_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE ([u].[Username] = @__username_0) OR ([u].[Email] = @__email_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2025-03-25 01:26:20.5193 | Debug | A data reader was disposed. 
+2025-03-25 01:26:20.5272 | Debug | Closing connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.5561 | Debug | Closed connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.5721 | Debug | Compiling query expression: 
+'DbSet<UserEntity>()
+    .Any(u => u.Username == __username_0)' 
+2025-03-25 01:26:20.5721 | Debug | Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Users AS u
+            WHERE u.Username == @__username_0)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    RepositoryLayer.Context.GreetingApplicationContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2025-03-25 01:26:20.5761 | Debug | Creating DbCommand for 'ExecuteReader'. 
+2025-03-25 01:26:20.5761 | Debug | Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-25 01:26:20.5761 | Debug | Opening connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.5761 | Debug | Opened connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.5761 | Debug | Executing DbCommand [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2025-03-25 01:26:20.5895 | Info | Executed DbCommand (8ms) [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2025-03-25 01:26:20.5895 | Debug | A data reader was disposed. 
+2025-03-25 01:26:20.5895 | Debug | Closing connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.5895 | Debug | Closed connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.5895 | Debug | Compiling query expression: 
+'DbSet<UserEntity>()
+    .Any(u => u.Email == __email_0)' 
+2025-03-25 01:26:20.5895 | Debug | Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Users AS u
+            WHERE u.Email == @__email_0)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    RepositoryLayer.Context.GreetingApplicationContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2025-03-25 01:26:20.5895 | Debug | Creating DbCommand for 'ExecuteReader'. 
+2025-03-25 01:26:20.5895 | Debug | Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-25 01:26:20.5895 | Debug | Opening connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.5895 | Debug | Opened connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.5895 | Debug | Executing DbCommand [Parameters=[@__email_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2025-03-25 01:26:20.5895 | Info | Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2025-03-25 01:26:20.6014 | Debug | A data reader was disposed. 
+2025-03-25 01:26:20.6014 | Debug | Closing connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.6014 | Debug | Closed connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.7169 | Debug | Context 'GreetingApplicationContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-25 01:26:20.7242 | Debug | SaveChanges starting for 'GreetingApplicationContext'. 
+2025-03-25 01:26:20.7242 | Debug | DetectChanges starting for 'GreetingApplicationContext'. 
+2025-03-25 01:26:20.7556 | Debug | DetectChanges completed for 'GreetingApplicationContext'. 
+2025-03-25 01:26:20.7741 | Debug | Opening connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.7741 | Debug | Opened connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.7741 | Debug | Beginning transaction with isolation level 'Unspecified'. 
+2025-03-25 01:26:20.7995 | Debug | Began transaction with isolation level 'ReadCommitted'. 
+2025-03-25 01:26:20.8749 | Debug | Creating DbCommand for 'ExecuteReader'. 
+2025-03-25 01:26:20.8749 | Debug | Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-25 01:26:20.8749 | Debug | Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 450), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [PasswordHash], [Salt], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-03-25 01:26:20.8907 | Info | Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 450), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [PasswordHash], [Salt], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-03-25 01:26:20.8907 | Debug | A data reader was disposed. 
+2025-03-25 01:26:20.8907 | Debug | Committing transaction. 
+2025-03-25 01:26:20.9177 | Debug | Committed transaction. 
+2025-03-25 01:26:20.9177 | Debug | Closing connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.9177 | Debug | Closed connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:20.9177 | Debug | Disposing transaction. 
+2025-03-25 01:26:20.9437 | Debug | An entity of type 'UserEntity' tracked by 'GreetingApplicationContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-25 01:26:20.9437 | Debug | SaveChanges completed for 'GreetingApplicationContext' with 1 entities written to the database. 
+2025-03-25 01:26:20.9437 | Info | User js12 registered successfully. 
+2025-03-25 01:26:20.9437 | Info | User js12 registered successfully. 
+2025-03-25 01:26:20.9543 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-25 01:26:20.9543 | Debug | No information found on request to perform content negotiation. 
+2025-03-25 01:26:20.9543 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-25 01:26:20.9602 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-25 01:26:20.9602 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-25 01:26:20.9602 | Info | Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-25 01:26:20.9810 | Info | Executed action HelloGreetingApplication.Controllers.UserController.Register (HelloGreetingApplication) in 4055.9518ms 
+2025-03-25 01:26:20.9810 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.UserController.Register (HelloGreetingApplication)' 
+2025-03-25 01:26:21.0068 | Debug | 'GreetingApplicationContext' disposed. 
+2025-03-25 01:26:21.0238 | Info | Request finished HTTP/2 POST https://localhost:7021/api/User/register application/json 77 - 200 - application/json;+charset=utf-8 4229.3067ms 
+2025-03-25 01:26:24.9811 | Debug | Connection id "0HNBB1NBRHLEN" received FIN. 
+2025-03-25 01:26:24.9811 | Debug | Connection id "0HNBB1NBRHLEN" is closed. The last processed stream ID was 1. 
+2025-03-25 01:26:24.9811 | Debug | Connection id "0HNBB1NBRHLEN" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-25 01:26:25.0031 | Debug | Connection id "0HNBB1NBRHLEN" stopped. 
+2025-03-25 01:26:53.5358 | Debug | Connection id "0HNBB1NBRHLEO" accepted. 
+2025-03-25 01:26:53.5475 | Debug | Connection id "0HNBB1NBRHLEO" started. 
+2025-03-25 01:26:53.5698 | Debug | Connection 0HNBB1NBRHLEO established using the following protocol: Tls12 
+2025-03-25 01:26:53.5741 | Info | Request starting HTTP/2 POST https://localhost:7021/api/User/login application/json 77 
+2025-03-25 01:26:53.5741 | Debug | 1 candidate(s) found for the request path '/api/User/login' 
+2025-03-25 01:26:53.5741 | Debug | Endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-25 01:26:53.5741 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:26:53.5741 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-25 01:26:53.5741 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:26:53.5978 | Info | Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.Model.UserDTO) on controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication). 
+2025-03-25 01:26:53.6125 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-25 01:26:53.6125 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-25 01:26:53.6125 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-25 01:26:53.6125 | Debug | Execution plan of exception filters (in the following order): Middleware.GlobalExceptionFilter (Order: 0) 
+2025-03-25 01:26:53.6125 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-25 01:26:53.6125 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:26:53.6125 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:26:53.6125 | Debug | Attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:26:53.6159 | Debug | Attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' using the name '' in request data ... 
+2025-03-25 01:26:53.6159 | Debug | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-25 01:26:53.6159 | Debug | Connection id "0HNBB1NBRHLEO", Request id "0HNBB1NBRHLEO:00000001": started reading request body. 
+2025-03-25 01:26:53.6159 | Debug | Connection id "0HNBB1NBRHLEO", Request id "0HNBB1NBRHLEO:00000001": done reading request body. 
+2025-03-25 01:26:53.6159 | Debug | JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.UserDTO' 
+2025-03-25 01:26:53.6159 | Debug | Done attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:26:53.6159 | Debug | Done attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:26:53.6159 | Debug | Attempting to validate the bound parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:26:53.6159 | Debug | Done attempting to validate the bound parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:26:53.6159 | Info | Login attempt for Username: js12 
+2025-03-25 01:26:53.6159 | Info | Login attempt for Username: js12 
+2025-03-25 01:26:53.6159 | Info | Entity Framework Core 6.0.36 initialized 'GreetingApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-25 01:26:53.6159 | Debug | Compiling query expression: 
+'DbSet<UserEntity>()
+    .FirstOrDefault(u => u.Username == __username_0)' 
+2025-03-25 01:26:53.6925 | Debug | Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.Email (string) Required Index, 1], [Property: UserEntity.PasswordHash (string) Required, 2], [Property: UserEntity.Salt (string) Required, 3], [Property: UserEntity.Username (string) Required Index, 4] }
+        SELECT TOP(1) u.Id, u.Email, u.PasswordHash, u.Salt, u.Username
+        FROM Users AS u
+        WHERE u.Username == @__username_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserEntity>, 
+    RepositoryLayer.Context.GreetingApplicationContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2025-03-25 01:26:53.6925 | Debug | Creating DbCommand for 'ExecuteReader'. 
+2025-03-25 01:26:53.6925 | Debug | Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-25 01:26:53.6925 | Debug | Opening connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:53.6925 | Debug | Opened connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:53.6925 | Debug | Executing DbCommand [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Salt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-03-25 01:26:53.7144 | Info | Executed DbCommand (12ms) [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Salt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-03-25 01:26:53.7316 | Debug | Context 'GreetingApplicationContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-25 01:26:53.7316 | Debug | A data reader was disposed. 
+2025-03-25 01:26:53.7316 | Debug | Closing connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:53.7316 | Debug | Closed connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:26:53.7316 | Info | Login successful for Username: js12 
+2025-03-25 01:26:53.7412 | Info | Login successful for Username: js12 
+2025-03-25 01:26:53.7412 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-25 01:26:53.7412 | Debug | No information found on request to perform content negotiation. 
+2025-03-25 01:26:53.7412 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-25 01:26:53.7412 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-25 01:26:53.7412 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-25 01:26:53.7412 | Info | Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ModelLayer.Model.UserDTO, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-25 01:26:53.7412 | Info | Executed action HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication) in 133.2909ms 
+2025-03-25 01:26:53.7412 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:26:53.7412 | Debug | 'GreetingApplicationContext' disposed. 
+2025-03-25 01:26:53.7412 | Info | Request finished HTTP/2 POST https://localhost:7021/api/User/login application/json 77 - 200 - application/json;+charset=utf-8 174.3801ms 
+2025-03-25 01:27:00.0389 | Debug | Connection id "0HNBB1NBRHLEO" received FIN. 
+2025-03-25 01:27:00.0389 | Debug | Connection id "0HNBB1NBRHLEO" is closed. The last processed stream ID was 1. 
+2025-03-25 01:27:00.0389 | Debug | Connection id "0HNBB1NBRHLEO" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-25 01:27:00.0570 | Debug | Connection id "0HNBB1NBRHLEO" stopped. 
+2025-03-25 01:27:07.9248 | Debug | Connection id "0HNBB1NBRHLEP" accepted. 
+2025-03-25 01:27:07.9304 | Debug | Connection id "0HNBB1NBRHLEP" started. 
+2025-03-25 01:27:07.9468 | Debug | Connection 0HNBB1NBRHLEP established using the following protocol: Tls12 
+2025-03-25 01:27:07.9468 | Info | Request starting HTTP/2 POST https://localhost:7021/api/User/login application/json 75 
+2025-03-25 01:27:07.9468 | Debug | 1 candidate(s) found for the request path '/api/User/login' 
+2025-03-25 01:27:07.9468 | Debug | Endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-25 01:27:07.9468 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:27:07.9468 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-25 01:27:07.9468 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:27:07.9468 | Info | Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.Model.UserDTO) on controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication). 
+2025-03-25 01:27:07.9468 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-25 01:27:07.9468 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-25 01:27:07.9468 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-25 01:27:07.9468 | Debug | Execution plan of exception filters (in the following order): Middleware.GlobalExceptionFilter (Order: 0) 
+2025-03-25 01:27:07.9468 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-25 01:27:07.9468 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:27:07.9468 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:27:07.9468 | Debug | Attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:27:07.9468 | Debug | Attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' using the name '' in request data ... 
+2025-03-25 01:27:07.9600 | Debug | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-25 01:27:07.9600 | Debug | Connection id "0HNBB1NBRHLEP", Request id "0HNBB1NBRHLEP:00000001": started reading request body. 
+2025-03-25 01:27:07.9600 | Debug | Connection id "0HNBB1NBRHLEP", Request id "0HNBB1NBRHLEP:00000001": done reading request body. 
+2025-03-25 01:27:07.9600 | Debug | JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.UserDTO' 
+2025-03-25 01:27:07.9600 | Debug | Done attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:07.9600 | Debug | Done attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:07.9600 | Debug | Attempting to validate the bound parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:27:07.9600 | Debug | Done attempting to validate the bound parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:07.9600 | Info | Login attempt for Username: js12 
+2025-03-25 01:27:07.9600 | Info | Login attempt for Username: js12 
+2025-03-25 01:27:08.0529 | Info | Entity Framework Core 6.0.36 initialized 'GreetingApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-25 01:27:08.0635 | Debug | Creating DbCommand for 'ExecuteReader'. 
+2025-03-25 01:27:08.0635 | Debug | Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-25 01:27:08.0635 | Debug | Opening connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:08.0635 | Debug | Opened connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:08.0635 | Debug | Executing DbCommand [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Salt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-03-25 01:27:08.0635 | Info | Executed DbCommand (6ms) [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Salt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-03-25 01:27:08.0714 | Debug | Context 'GreetingApplicationContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-25 01:27:08.0714 | Debug | A data reader was disposed. 
+2025-03-25 01:27:08.0714 | Debug | Closing connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:08.0714 | Debug | Closed connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:08.0714 | Info | Login successful for Username: js12 
+2025-03-25 01:27:08.0714 | Info | Login successful for Username: js12 
+2025-03-25 01:27:08.0714 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-25 01:27:08.0714 | Debug | No information found on request to perform content negotiation. 
+2025-03-25 01:27:08.0714 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-25 01:27:08.0714 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-25 01:27:08.0714 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-25 01:27:08.0714 | Info | Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ModelLayer.Model.UserDTO, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-25 01:27:08.0714 | Info | Executed action HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication) in 130.8766ms 
+2025-03-25 01:27:08.0866 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:27:08.0866 | Debug | 'GreetingApplicationContext' disposed. 
+2025-03-25 01:27:08.0866 | Info | Request finished HTTP/2 POST https://localhost:7021/api/User/login application/json 75 - 200 - application/json;+charset=utf-8 140.1050ms 
+2025-03-25 01:27:10.0449 | Debug | Connection id "0HNBB1NBRHLEP" received FIN. 
+2025-03-25 01:27:10.0449 | Debug | Connection id "0HNBB1NBRHLEP" is closed. The last processed stream ID was 1. 
+2025-03-25 01:27:10.0449 | Debug | Connection id "0HNBB1NBRHLEP" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-25 01:27:10.0581 | Debug | Connection id "0HNBB1NBRHLEP" stopped. 
+2025-03-25 01:27:19.3564 | Debug | Connection id "0HNBB1NBRHLEQ" accepted. 
+2025-03-25 01:27:19.3564 | Debug | Connection id "0HNBB1NBRHLEQ" started. 
+2025-03-25 01:27:19.3712 | Debug | Connection 0HNBB1NBRHLEQ established using the following protocol: Tls12 
+2025-03-25 01:27:19.3712 | Info | Request starting HTTP/2 POST https://localhost:7021/api/User/login application/json 75 
+2025-03-25 01:27:19.3712 | Debug | 1 candidate(s) found for the request path '/api/User/login' 
+2025-03-25 01:27:19.3712 | Debug | Endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-25 01:27:19.3712 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:27:19.3712 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-25 01:27:19.3815 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:27:19.3815 | Info | Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.Model.UserDTO) on controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication). 
+2025-03-25 01:27:19.3815 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-25 01:27:19.3815 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-25 01:27:19.3815 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-25 01:27:19.3815 | Debug | Execution plan of exception filters (in the following order): Middleware.GlobalExceptionFilter (Order: 0) 
+2025-03-25 01:27:19.3815 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-25 01:27:19.3815 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:27:19.3815 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:27:19.3815 | Debug | Attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:27:19.3815 | Debug | Attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' using the name '' in request data ... 
+2025-03-25 01:27:19.3815 | Debug | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-25 01:27:19.3815 | Debug | Connection id "0HNBB1NBRHLEQ", Request id "0HNBB1NBRHLEQ:00000001": started reading request body. 
+2025-03-25 01:27:19.3815 | Debug | Connection id "0HNBB1NBRHLEQ", Request id "0HNBB1NBRHLEQ:00000001": done reading request body. 
+2025-03-25 01:27:19.3815 | Debug | JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.UserDTO' 
+2025-03-25 01:27:19.3815 | Debug | Done attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:19.3815 | Debug | Done attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:19.3815 | Debug | Attempting to validate the bound parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:27:19.3815 | Debug | Done attempting to validate the bound parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:19.3815 | Info | Login attempt for Username: js12 
+2025-03-25 01:27:19.3815 | Info | Login attempt for Username: js12 
+2025-03-25 01:27:19.3815 | Info | Entity Framework Core 6.0.36 initialized 'GreetingApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-25 01:27:19.3815 | Debug | Creating DbCommand for 'ExecuteReader'. 
+2025-03-25 01:27:19.3815 | Debug | Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-25 01:27:19.3815 | Debug | Opening connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:19.3815 | Debug | Opened connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:19.3815 | Debug | Executing DbCommand [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Salt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-03-25 01:27:19.3815 | Info | Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Salt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-03-25 01:27:19.3995 | Debug | Context 'GreetingApplicationContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-25 01:27:19.3995 | Debug | A data reader was disposed. 
+2025-03-25 01:27:19.3995 | Debug | Closing connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:19.3995 | Debug | Closed connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:19.3995 | Info | Login successful for Username: js12 
+2025-03-25 01:27:19.3995 | Info | Login successful for Username: js12 
+2025-03-25 01:27:19.3995 | Debug | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-25 01:27:19.3995 | Debug | No information found on request to perform content negotiation. 
+2025-03-25 01:27:19.3995 | Debug | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-25 01:27:19.3995 | Debug | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-25 01:27:19.3995 | Debug | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-25 01:27:19.3995 | Info | Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ModelLayer.Model.UserDTO, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-25 01:27:19.3995 | Info | Executed action HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication) in 24.457ms 
+2025-03-25 01:27:19.3995 | Info | Executed endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:27:19.3995 | Debug | 'GreetingApplicationContext' disposed. 
+2025-03-25 01:27:19.3995 | Info | Request finished HTTP/2 POST https://localhost:7021/api/User/login application/json 75 - 200 - application/json;+charset=utf-8 34.0570ms 
+2025-03-25 01:27:20.0556 | Debug | Connection id "0HNBB1NBRHLEQ" received FIN. 
+2025-03-25 01:27:20.0556 | Debug | Connection id "0HNBB1NBRHLEQ" is closed. The last processed stream ID was 1. 
+2025-03-25 01:27:20.0556 | Debug | Connection id "0HNBB1NBRHLEQ" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-25 01:27:20.0556 | Debug | Connection id "0HNBB1NBRHLEQ" stopped. 
+2025-03-25 01:27:35.2687 | Debug | Connection id "0HNBB1NBRHLER" accepted. 
+2025-03-25 01:27:35.2746 | Debug | Connection id "0HNBB1NBRHLER" started. 
+2025-03-25 01:27:35.2937 | Debug | Connection 0HNBB1NBRHLER established using the following protocol: Tls12 
+2025-03-25 01:27:35.2937 | Info | Request starting HTTP/2 POST https://localhost:7021/api/User/login application/json 71 
+2025-03-25 01:27:35.2937 | Debug | 1 candidate(s) found for the request path '/api/User/login' 
+2025-03-25 01:27:35.2937 | Debug | Endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-25 01:27:35.2937 | Debug | Request matched endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:27:35.2937 | Debug | Static files was skipped as the request already matched an endpoint. 
+2025-03-25 01:27:35.2937 | Info | Executing endpoint 'HelloGreetingApplication.Controllers.UserController.Login (HelloGreetingApplication)' 
+2025-03-25 01:27:35.2937 | Info | Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.Model.UserDTO) on controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication). 
+2025-03-25 01:27:35.2937 | Debug | Execution plan of authorization filters (in the following order): None 
+2025-03-25 01:27:35.2937 | Debug | Execution plan of resource filters (in the following order): None 
+2025-03-25 01:27:35.2937 | Debug | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-25 01:27:35.2937 | Debug | Execution plan of exception filters (in the following order): Middleware.GlobalExceptionFilter (Order: 0) 
+2025-03-25 01:27:35.2937 | Debug | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-25 01:27:35.2937 | Debug | Executing controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:27:35.2937 | Debug | Executed controller factory for controller HelloGreetingApplication.Controllers.UserController (HelloGreetingApplication) 
+2025-03-25 01:27:35.2937 | Debug | Attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:27:35.3035 | Debug | Attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' using the name '' in request data ... 
+2025-03-25 01:27:35.3035 | Debug | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-25 01:27:35.3035 | Debug | Connection id "0HNBB1NBRHLER", Request id "0HNBB1NBRHLER:00000001": started reading request body. 
+2025-03-25 01:27:35.3035 | Debug | Connection id "0HNBB1NBRHLER", Request id "0HNBB1NBRHLER:00000001": done reading request body. 
+2025-03-25 01:27:35.3035 | Debug | JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.UserDTO' 
+2025-03-25 01:27:35.3035 | Debug | Done attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:35.3035 | Debug | Done attempting to bind parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:35.3035 | Debug | Attempting to validate the bound parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO' ... 
+2025-03-25 01:27:35.3035 | Debug | Done attempting to validate the bound parameter 'loginRequest' of type 'ModelLayer.Model.UserDTO'. 
+2025-03-25 01:27:35.3035 | Info | Login attempt for Username: js12 
+2025-03-25 01:27:35.3035 | Info | Login attempt for Username: js12 
+2025-03-25 01:27:35.3035 | Info | Entity Framework Core 6.0.36 initialized 'GreetingApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-25 01:27:35.3035 | Debug | Creating DbCommand for 'ExecuteReader'. 
+2025-03-25 01:27:35.3035 | Debug | Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-25 01:27:35.3035 | Debug | Opening connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:35.3035 | Debug | Opened connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:35.3035 | Debug | Executing DbCommand [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Salt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-03-25 01:27:35.3035 | Info | Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Salt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-03-25 01:27:35.3035 | Debug | Context 'GreetingApplicationContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-25 01:27:35.3035 | Debug | A data reader was disposed. 
+2025-03-25 01:27:35.3035 | Debug | Closing connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:35.3035 | Debug | Closed connection to database 'GreetingApplicationAPI' on server 'LAPTOP-9VG166Q4\SQLEXPRESS'. 
+2025-03-25 01:27:35.3035 | Warn | Login failed: Invalid credentials for Username: js12 
+2025-03-25 01:27:35.5745 | Error | Error occurred during login for Username: js12 System.UnauthorizedAccessException: Invalid username or password.
+   at BusinessLayer.Service.UserBL.LoginBL(String username, String password) in C:\Users\user\Desktop\GreetingApplication_GIT\GreetingApplication_2384200077\BusinessLayer\Service\UserBL.cs:line 73
