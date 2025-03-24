@@ -5,6 +5,19 @@
     "version": "1.0"
   },
   "paths": {
+    "/HelloGreeting/exception": {
+      "get": {
+        "tags": [
+          "HelloGreeting"
+        ],
+        "summary": "Method for test Exception API",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/HelloGreeting/greeting": {
       "get": {
         "tags": [
