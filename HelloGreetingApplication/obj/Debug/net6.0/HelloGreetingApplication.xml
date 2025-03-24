@@ -9,6 +9,13 @@
             Class providing API for HelloGreeting
             </summary>
         </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.ThrowException">
+            <summary>
+            Method for test Exception API
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
         <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.GetGreetingMessage">
             <summary>
             Method to fetch the greeting message from Business Layer

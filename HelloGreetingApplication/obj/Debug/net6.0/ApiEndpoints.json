@@ -80,6 +80,16 @@
   },
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
+    "Method": "ThrowException",
+    "RelativePath": "HelloGreeting/exception",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
     "Method": "GetGreetingMessage",
     "RelativePath": "HelloGreeting/greeting",
     "HttpMethod": "GET",

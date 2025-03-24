@@ -24,6 +24,17 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
+        /// Method for test Exception API
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        [HttpGet("exception")]
+        public IActionResult ThrowException()
+        {
+            throw new Exception("This is a test exception");
+        }
+
+        /// <summary>
         /// Method to fetch the greeting message from Business Layer
         /// </summary>
         /// <returns>response model</returns>
@@ -117,13 +128,21 @@ namespace HelloGreetingApplication.Controllers
         [HttpPost]
         public IActionResult SaveGreetingMessage(RequestDTO requestDTO)
         {
-            _logger.LogInformation("POST request to save greeting message in the repository.");
-            var result = _greetingBL.GreetingMessageBL(requestDTO);
-            response = new ResponseModel<RequestDTO>();
-            response.Success = true;
-            response.Message = "Greeting message saved!";
-            response.Data = result;
-            return Ok(response);
+            try
+            {
+                _logger.LogInformation("POST request to save greeting message in the repository.");
+                var result = _greetingBL.GreetingMessageBL(requestDTO);
+                response = new ResponseModel<RequestDTO>();
+                response.Success = true;
+                response.Message = "Greeting message saved!";
+                response.Data = result;
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error saving greeting: {ex.Message}");
+                return StatusCode(500, "An error occurred while saving the greeting.");
+            }
         }
 
         /// <summary>

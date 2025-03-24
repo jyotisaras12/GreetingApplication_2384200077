@@ -7,6 +7,8 @@ using NLog;
 using NLog.Web;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using Microsoft.AspNetCore.Http;
+using Middleware;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
@@ -40,7 +42,13 @@ try
         options.IncludeXmlComments(xmlPath);
     });
 
+    builder.Services.AddControllers(options =>
+    {
+        options.Filters.Add<GlobalExceptionFilter>();
+    });
+
     var app = builder.Build();
+
 
     app.UseSwagger();
     app.UseSwaggerUI();
